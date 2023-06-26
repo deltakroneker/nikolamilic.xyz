@@ -1,5 +1,11 @@
-<head> 
+<head>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,900italic,900,700italic,700,600italic,600,400italic,300italic,300,200italic' rel='stylesheet' type='text/css'>
+
+  <style>
+    pre[style*="background-color"] {
+      background-color: #282c34 !important; /* Set the dark code background color */
+    }
+  </style>
 </head>
 
 <style>
@@ -7,13 +13,13 @@
     font-family: Source Sans Pro, sans-serif;
     margin: auto;
     padding: 20px;
-    max-width: 720px;
+    max-width: 880px;
     text-align: left;
-    background-color: #fff;
+    background-color: #131314; /* Set the dark background color */
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.5;
-    color: #444;
+    color: #b6bcc6; /* Set the dark text color */
   }
 
   h1,
@@ -21,15 +27,17 @@
   h3,
   h4,
   h5,
-  h6,
+  h6 {
+    color: #dcdfe4; /* Set the dark heading text color with increased contrast */
+  }
+
   strong,
   b {
-    color: #222;
+    color: #ffffff; /* Set the bold text color with increased contrast */
   }
 
   a {
-    color: #f05039;
-    /*color: #ff5e6c;*/
+    color: #ff9500; /* Set the dark link color with an orange tint */
   }
 
   .title {
@@ -48,10 +56,14 @@
   textarea {
     width: 100%;
     font-size: 16px;
+    background-color: #2c313a; /* Set the dark textarea background color */
+    color: #abb2bf; /* Set the dark textarea text color */
   }
 
   input {
     font-size: 16px;
+    background-color: #2c313a; /* Set the dark input background color */
+    color: #abb2bf; /* Set the dark input text color */
   }
 
   content {
@@ -66,18 +78,33 @@
     max-width: 100%;
   }
 
+  pre {
+    background-color: #282c34; /* Set the dark code background color for the pre element */
+    padding: 10px;
+    border-radius: 5px; /* Add border radius for code blocks */
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+
   code {
     padding: 2px 5px;
-    background-color: #f2f2f2;
+    background-color: #282c34; /* Set the dark code background color */
+    color: #abb2bf; /* Set the dark code text color */
+    font-family: Menlo, Monaco, 'Courier New', monospace; /* Set the code font family */
+    font-size: 14px; /* Set the code font size */
+    border-radius: 3px; /* Add border radius for code blocks */
+    overflow-x: auto; /* Enable horizontal scrolling */
   }
 
   pre code {
-    color: #222;
-    display: block;
-    padding: 20px;
-    white-space: pre-wrap;
-    font-size: 14px;
-    overflow-x: auto;
+    padding: 10px;
+    background-color: #282c34; /* Set the dark code background color */
+    color: #abb2bf; /* Set the dark code text color */
+    font-family: Menlo, Monaco, 'Courier New', monospace; /* Set the code font family */
+    font-size: 13px; /* Set the code font size */
+    line-height: 1.4; /* Set the code line height */
+    border-radius: 5px; /* Add border radius for code blocks */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: pre-wrap; /* Preserve line breaks */
   }
 
   div.highlight pre {
@@ -91,8 +118,8 @@
   }
 
   blockquote {
-    border-left: 1px solid #999;
-    color: #222;
+    border-left: 2px solid #4b5263; /* Set the dark blockquote border color */
+    color: #abb2bf; /* Set the dark blockquote text color */
     padding-left: 20px;
     font-style: italic;
   }
@@ -103,12 +130,12 @@
   }
 
   .helptext {
-    color: #777;
+    color: #5c6370; /* Set the dark helptext color */
     font-size: small;
   }
 
   .errorlist {
-    color: #eba613;
+    color: #e06c75; /* Set the dark error list color */
     font-size: small;
   }
 
@@ -123,55 +150,20 @@
   }
 
   ul.blog-posts li span {
-    flex: 0 0 130px;
+    flex: 0 130px;
   }
 
   ul.blog-posts li a:visited {
-    color: #8b6fcb;
+    color: #ff9500; /* Set the dark visited link color with an orange tint */
   }
 
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #1d1f20;
-      color: #ddd;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-      color: #eee;
-    }
-
-    a {
-      color: #f07639;
-    }
-
-    code {
-      background-color: #777;
-    }
-
-    pre code {
-      color: #ddd;
-    }
-
-    blockquote {
-      color: #ccc;
-    }
-
-    textarea,
-    input {
-      background-color: #252525;
-      color: #ddd;
-    }
-
-    .helptext {
-      color: #aaa;
-    }
+  /* Remove border from triple tick code blocks */
+  pre code.hljs {
+    border: none !important;
   }
 
+  /* Custom styles for Swift comments */
+  pre code.language-swift span.comment {
+    color: #98c379; /* Set the green color for Swift comments */
+  }
 </style>
