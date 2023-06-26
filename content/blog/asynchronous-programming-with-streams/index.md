@@ -2,7 +2,7 @@
 title = "Asynchronous programming with streams"
 date = "2023-06-26T11:16:07+02:00"
 description = "Introduction to Combine Publishers, Subscribers and Subscriptions"
-images = ["/blog/asynchronous-programming-with-streams/asynchronous-programming-with-streams.png"]
+images = ["/asynchronous-programming-with-streams/asynchronous-programming-with-streams.png"]
 tags = ["ios","swift","combine","rxswift"]
 +++
 
