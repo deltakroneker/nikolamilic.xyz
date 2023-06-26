@@ -2,15 +2,11 @@
 title = "Asynchronous programming with streams"
 date = "2023-06-26T11:16:07+02:00"
 description = "Introduction to Combine Publishers, Subscribers and Subscriptions"
-images = ["asynchronous-programming-with-streams.png"]
+images = ["/blog/asynchronous-programming-with-streams/asynchronous-programming-with-streams.png"]
 tags = ["ios","swift","combine","rxswift"]
 +++
 
 &nbsp;
-
-<head>
-    <meta name="image" property="og:image" content="asynchronous-programming-with-streams.png">
-</head>
 
 ## Publisher
 
