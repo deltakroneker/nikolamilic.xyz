@@ -2,7 +2,7 @@
 title = "Asynchronous programming with streams"
 date = "2023-06-26T11:16:07+02:00"
 description = "Introduction to Combine Publishers, Subscribers and Subscriptions"
-images = ["asynchronous-programming-with-streams.png"]
+images = ["images/asynchronous-programming-with-streams.png"]
 tags = ["ios","swift","combine","rxswift"]
 +++
 
@@ -131,8 +131,8 @@ var subscriptions = Set<AnyCancellable>()
 let subscription: AnyCancellable = [1, 2, 3].publisher
     .sink { value in 
 		print("Received \(value)") 
-		}
-		.store(in: &subscriptions)
+    }
+    .store(in: &subscriptions)
 ```
 
 `Subscription` protocol implements `Cancellable` protocol, which just defines a single method called `cancel()`, and subscribers (once connected to the publisher instance) return a subscription object as a type-erased `AnyCancellable`.
